@@ -25,7 +25,6 @@ class MainViewModel : ViewModel() {
                             loadingState = LoadingState.None
                         )
                 }
-
             }
 
             is Action.IncrementBy -> {
@@ -39,11 +38,8 @@ class MainViewModel : ViewModel() {
                             loadingState = LoadingState.None
                         )
                 }
-
             }
-
         }
-
     }
 
     sealed class Action {

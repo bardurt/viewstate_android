@@ -24,7 +24,6 @@ fun ViewStateApp(mainViewModel: MainViewModel) {
         viewState = viewState,
         onIncrement = {
             mainViewModel.performAction(MainViewModel.Action.IncrementBy(amount = it))
-
         },
         onDecrement = {
             mainViewModel.performAction(MainViewModel.Action.DecrementBy(amount = it))
@@ -106,6 +105,5 @@ fun CounterScreen(
 
             }
         }
-
     }
 }
